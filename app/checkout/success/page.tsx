@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+// Generate order number at build time
+const orderNumber = 65480;
+
 export default function CheckoutSuccessPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center py-16">
@@ -19,7 +22,7 @@ export default function CheckoutSuccessPage() {
           
           <div className="bg-purple-50 rounded-lg p-6 mb-8">
             <p className="text-gray-700 mb-2">
-              <strong className="text-purple-600">Order Number:</strong> #ODR-{Math.floor(Math.random() * 100000)}
+              <strong className="text-purple-600">Order Number:</strong> #ODR-{orderNumber}
             </p>
             <p className="text-gray-700 mb-2">
               <strong className="text-purple-600">Estimated Delivery:</strong> 25-30 minutes
