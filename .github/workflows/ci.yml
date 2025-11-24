@@ -1,0 +1,17 @@
+name: CI Test
+on: 
+  push:
+    branches:
+    - main
+
+jobs:
+  first_job:
+    name: hehe
+    runs-on: ubuntu-lastest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: tesst echo
+    - run: echo "Hello world CI!"
+    
+  
